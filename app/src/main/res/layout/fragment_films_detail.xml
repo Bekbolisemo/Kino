@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/black"
     android:orientation="vertical"
     android:paddingHorizontal="16dp"
     android:paddingTop="32dp"
@@ -43,6 +43,7 @@
         android:id="@+id/director_text"
         style="@style/title"
         android:text="@string/director"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
 
@@ -61,6 +62,8 @@
         android:id="@+id/producer_text"
         style="@style/title"
         android:text="@string/producer"
+        android:textColor="@color/white"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/director_text" />
 
@@ -79,9 +82,9 @@
         android:id="@+id/release_date_text"
         style="@style/title"
         android:text="@string/release_date"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/producer_text"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/producer_text" />
 
     <TextView
         android:id="@+id/release_date"
