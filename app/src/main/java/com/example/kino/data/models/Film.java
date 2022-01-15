@@ -11,6 +11,13 @@ public class Film {
     String originalTitle;
     String description;
     String  image;
+    @SerializedName("movie_banner")
+    String movieBanner;
+    String director;
+    String producer;
+    @SerializedName("release_date")
+    String releaseDate;
+
 
     public String getId() {
         return id;
@@ -48,5 +55,39 @@ public class Film {
         return image;
     }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
 
+    public String getMovieBanner() {
+        return movieBanner;
+    }
+
+    public void setMovieBanner(String movieBanner) {
+        this.movieBanner = movieBanner;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public String getProducer() {
+        return producer;
+    }
+
+    public void setProducer(String producer) {
+        this.producer = producer;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
 }

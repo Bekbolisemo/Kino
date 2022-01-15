@@ -56,7 +56,11 @@ public class FilmsDetailFragment extends Fragment {
                     Film film = response.body();
                     binding.title.setText(film.getTitle());
                     binding.description.setText(film.getDescription());
-                    Glide.with(binding.image).load(film.getImage()).into(binding.image);
+                    binding.director.setText(film.getDirector());
+                    binding.producer.setText(film.getProducer());
+                    binding.releaseDate.setText(film.getReleaseDate());
+                    Glide.with(binding.image).load(film.getMovieBanner()).into(binding.image);
+
                 }
             }
 
